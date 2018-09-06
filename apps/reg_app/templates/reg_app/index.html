@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Enter Your Info!</h1>
+  <form action="/process/" method="post">
+    {% csrf_token %}
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name" placeholder="Vanilla">
+    <label for="last_name">Last Name:</label>
+    <input type="text" name="last_name" placeholder="Ice">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
